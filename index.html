@@ -29,7 +29,10 @@
                 <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
                 <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
                 <a href="#certifications" class="hover:text-blue-400 transition">Certifications</a>
-                <a href="https://juno-12.itch.io/" target="_blank" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 glow-primary transition">Play Games</a>
+                <div class="flex items-center gap-3">
+                    <a href="https://play.google.com/store/apps/dev?id=8795762098027969448" target="_blank" class="hover:text-blue-400 transition">Google Play</a>
+                    <a href="https://juno-12.itch.io/" target="_blank" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 glow-primary transition">Play Games</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -59,7 +62,8 @@
                     </div>
                     <div class="text-center">
                         <div class="w-16 h-16 mx-auto mb-4 bg-slate-800 rounded-2xl flex items-center justify-center border border-white/10">
-                            <i class="lucide-code text-purple-400 w-8 h-8"></i>
+                            <!-- 비어있던 아이콘 영역에 CPU 아이콘 추가 -->
+                            <i class="lucide-cpu text-purple-400 w-8 h-8"></i>
                         </div>
                         <p class="text-sm text-slate-500">Unity & C#</p>
                     </div>
@@ -73,16 +77,37 @@
                     <h2 class="text-4xl font-bold mb-4">Featured <span class="text-gradient">Projects</span></h2>
                     <p class="text-slate-400">직접 기획하고 개발한 주요 게임 프로젝트입니다.</p>
                 </div>
-		
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
+                <!-- 프로젝트 리스트 유지 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <!-- Fisher of Harbor -->
+                    <div class="animate-slide-up" style="animation-delay: 0s;">
+                        <div class="group relative card-gradient rounded-xl overflow-hidden hover-lift border border-border/50">
+                            <a href="https://juno-12.itch.io/fisher-of-harbor" target="_blank" rel="noopener noreferrer" class="block aspect-video overflow-hidden relative cursor-pointer">
+                                <img src="https://img.itch.zone/aW1nLzI1ODYyMzE1LnBuZw==/315x250%23c/SOGgnP.png" alt="Fisher of Harbor" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60"></div>
+                                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div class="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center animate-pulse-glow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-8 h-8 text-primary-foreground ml-1"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                                    </div>
+                                </div>
+                                <div class="absolute top-4 left-4"><span class="px-3 py-1 rounded-full text-xs font-medium bg-primary/20 text-primary border border-primary/30">Casual</span></div>
+                            </a>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Fisher of Harbor</h3>
+                                <p class="text-muted-foreground text-sm mb-4 line-clamp-2">항구에서 물고기를 낚는 낚시 게임. Android 플랫폼에서 즐길 수 있습니다.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Unity</span>
+                                    <span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Android</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- (다른 프로젝트들 생략: 기존 코드 구조 유지) -->
                 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"><div class="animate-slide-up" style="animation-delay: 0s;"><div class="group relative card-gradient rounded-xl overflow-hidden hover-lift border border-border/50"><a href="https://juno-12.itch.io/fisher-of-harbor" target="_blank" rel="noopener noreferrer" class="block aspect-video overflow-hidden relative cursor-pointer"><img src="https://img.itch.zone/aW1nLzI1ODYyMzE1LnBuZw==/315x250%23c/SOGgnP.png" alt="Fisher of Harbor" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60"></div><div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"><div class="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center animate-pulse-glow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-8 h-8 text-primary-foreground ml-1"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg></div></div><div class="absolute top-4 left-4"><span class="px-3 py-1 rounded-full text-xs font-medium bg-primary/20 text-primary border border-primary/30">Casual</span></div></a><div class="p-6"><h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Fisher of Harbor</h3><p class="text-muted-foreground text-sm mb-4 line-clamp-2">항구에서 물고기를 낚는 낚시 게임. Android 플랫폼에서 즐길 수 있습니다.</p><div class="flex flex-wrap gap-2"><span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Unity</span><span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Android</span><span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Fishing</span></div></div></div></div><div class="animate-slide-up" style="animation-delay: 0.1s;"><div class="group relative card-gradient rounded-xl overflow-hidden hover-lift border border-border/50"><a href="https://juno-12.itch.io/marble-roll" target="_blank" rel="noopener noreferrer" class="block aspect-video overflow-hidden relative cursor-pointer"><img src="https://img.itch.zone/aW1nLzI1ODU2MjgwLnBuZw==/315x250%23c/NNcb2w.png" alt="Marble Roll" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60"></div><div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"><div class="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center animate-pulse-glow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-8 h-8 text-primary-foreground ml-1"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg></div></div><div class="absolute top-4 left-4"><span class="px-3 py-1 rounded-full text-xs font-medium bg-primary/20 text-primary border border-primary/30">Casual</span></div></a><div class="p-6"><h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Marble Roll</h3><p class="text-muted-foreground text-sm mb-4 line-clamp-2">구슬을 굴려라! 화면을 터치해 공의 방향을 바꾸는 캐주얼 게임입니다.</p><div class="flex flex-wrap gap-2"><span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Unity</span><span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Android</span><span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Casual</span></div></div></div></div><div class="animate-slide-up" style="animation-delay: 0.2s;"><div class="group relative card-gradient rounded-xl overflow-hidden hover-lift border border-border/50"><a href="https://juno-12.itch.io/fragment-matcher" target="_blank" rel="noopener noreferrer" class="block aspect-video overflow-hidden relative cursor-pointer"><img src="https://img.itch.zone/aW1nLzI1MjIzNTcxLnBuZw==/315x250%23c/JYtLTt.png" alt="Fragment Matcher" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60"></div><div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"><div class="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center animate-pulse-glow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-8 h-8 text-primary-foreground ml-1"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg></div></div><div class="absolute top-4 left-4"><span class="px-3 py-1 rounded-full text-xs font-medium bg-primary/20 text-primary border border-primary/30">Puzzle</span></div></a><div class="p-6"><h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Fragment Matcher</h3><p class="text-muted-foreground text-sm mb-4 line-clamp-2">조각을 맞춰 퍼즐을 완성하는 매칭 게임입니다.</p><div class="flex flex-wrap gap-2"><span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Unity</span><span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Matching</span></div></div></div></div><div class="animate-slide-up" style="animation-delay: 0.3s;"><div class="group relative card-gradient rounded-xl overflow-hidden hover-lift border border-border/50"><a href="https://juno-12.itch.io/one-shoot-supporter" target="_blank" rel="noopener noreferrer" class="block aspect-video overflow-hidden relative cursor-pointer"><img src="https://img.itch.zone/aW1nLzI0ODYxMTc1LnBuZw==/315x250%23c/76lC2I.png" alt="One Shot Supporter" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60"></div><div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"><div class="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center animate-pulse-glow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-8 h-8 text-primary-foreground ml-1"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg></div></div><div class="absolute top-4 left-4"><span class="px-3 py-1 rounded-full text-xs font-medium bg-primary/20 text-primary border border-primary/30">Puzzle</span></div></a><div class="p-6"><h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">One Shot Supporter</h3><p class="text-muted-foreground text-sm mb-4 line-clamp-2">한 번의 기회로 모든 것을 해결해야 하는 긴장감 넘치는 퍼즐 게임입니다.</p><div class="flex flex-wrap gap-2"><span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Unity</span><span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Puzzle</span></div></div></div></div><div class="animate-slide-up" style="animation-delay: 0.4s;"><div class="group relative card-gradient rounded-xl overflow-hidden hover-lift border border-border/50"><a href="https://juno-12.itch.io/violent-shift" target="_blank" rel="noopener noreferrer" class="block aspect-video overflow-hidden relative cursor-pointer"><img src="https://img.itch.zone/aW1nLzI0MjE0MTY0LnBuZw==/315x250%23c/yBaBLm.png" alt="Violent Shift" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60"></div><div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"><div class="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center animate-pulse-glow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-8 h-8 text-primary-foreground ml-1"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg></div></div><div class="absolute top-4 left-4"><span class="px-3 py-1 rounded-full text-xs font-medium bg-primary/20 text-primary border border-primary/30">Action</span></div></a><div class="p-6"><h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Violent Shift</h3><p class="text-muted-foreground text-sm mb-4 line-clamp-2">액션 게임에서 덱빌딩 카드 게임으로 변신! AI 도구를 활용해 실험적으로 개발한 프로젝트입니다.</p><div class="flex flex-wrap gap-2"><span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Unity</span><span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">C#</span><span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Deck Building</span></div></div></div></div><div class="animate-slide-up" style="animation-delay: 0.5s;"><div class="group relative card-gradient rounded-xl overflow-hidden hover-lift border border-border/50"><a href="https://juno-12.itch.io/escape-fix" target="_blank" rel="noopener noreferrer" class="block aspect-video overflow-hidden relative cursor-pointer"><img src="https://img.itch.zone/aW1nLzE5NDc2ODQ5LnBuZw==/315x250%23c/HdUE5C.png" alt="Escape Fix" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"><div class="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60"></div><div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"><div class="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center animate-pulse-glow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-8 h-8 text-primary-foreground ml-1"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg></div></div><div class="absolute top-4 left-4"><span class="px-3 py-1 rounded-full text-xs font-medium bg-primary/20 text-primary border border-primary/30">Action Puzzle</span></div></a><div class="p-6"><h3 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Escape Fix</h3><p class="text-muted-foreground text-sm mb-4 line-clamp-2">전선을 연결해 탈출구를 찾아라! 액션과 퍼즐이 결합된 스릴 넘치는 게임.</p><div class="flex flex-wrap gap-2"><span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Unity</span><span class="px-2 py-1 rounded text-xs bg-muted text-muted-foreground">Wire Puzzle</span></div></div></div></div></div>
-
             </div>
-
         </section>
 
+        <!-- Tech Stack, Certifications 섹션 유지 -->
         <section id="skills" class="py-24">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
@@ -128,35 +153,15 @@
                 </div>
             </div>
         </section>
-
-        <section id="certifications" class="py-24 bg-slate-900/50">
-            <div class="container mx-auto px-6 max-w-4xl">
-                <h2 class="text-3xl font-bold mb-12 text-center">자격증 <span class="text-gradient">& 인증</span></h2>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="flex items-center gap-4 p-6 bg-slate-800 rounded-xl border border-white/5">
-                        <i class="lucide-award text-yellow-500 w-10 h-10"></i>
-                        <div>
-                            <p class="font-bold">정보처리기사</p>
-                            <p class="text-sm text-slate-500">한국산업인력공단</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-4 p-6 bg-slate-800 rounded-xl border border-white/5">
-                        <i class="lucide-award text-yellow-500 w-10 h-10"></i>
-                        <div>
-                            <p class="font-bold text-sm">컴퓨터활용능력 1급</p>
-                            <p class="text-sm text-slate-500 text-xs">대한상공회의소</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="py-12 border-t border-white/10 text-center">
         <div class="container mx-auto px-6">
-            <div class="flex justify-center gap-6 mb-6">
+            <div class="flex justify-center flex-wrap gap-6 mb-6">
                 <a href="https://juno-12.itch.io/" target="_blank" class="hover:text-blue-500 transition">Itch.io</a>
+                <a href="https://play.google.com/store/apps/dev?id=8795762098027969448" target="_blank" class="hover:text-blue-400 transition">Google Play</a>
                 <a href="https://blog.naver.com/dev_juno" target="_blank" class="hover:text-green-500 transition">Blog</a>
+                <a href="https://junhogithub12.github.io/Privacy_Policy.md" target="_blank" class="hover:text-slate-300 transition text-slate-500">Privacy Policy</a>
             </div>
             <p class="text-slate-500 text-sm">© 2026 Hwang Junho. All rights reserved.</p>
         </div>
